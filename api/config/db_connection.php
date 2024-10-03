@@ -3,8 +3,8 @@
     * PostgreSQL Database connection
     * Developer: Juan Obando
     */
-    require '../../vendor/autoload.php';
-    $dotenv = Dotenv\Dotenv::createImmutable('../../');
+    require dirname(__DIR__, 2) . '/vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__, 2));
     $dotenv->load();
 
     $servername = $_ENV['SERVER'];
@@ -26,8 +26,8 @@
     if (!$conn) {
         die("Connection failed: " . pg_last_error());
     } else {
-        echo "Connected successfully";
+        // echo "Connected successfully";
     }
 
-    pg_close($conn);
+    // pg_close($conn);
 ?>
