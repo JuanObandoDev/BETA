@@ -7,26 +7,31 @@
   </head>
   <body>
     <center><h1>Register</h1></center>
-    <form action="#" name="Register_Form" method="post">
+    <form action="./backend/signup.php" name="Register_Form" method="post">
       <table border="0" align="center">
         <tr>
           <td>
-            <label for="">Email:</label>
+            <label for="email">Email:</label>
           </td>
         </tr>
         <tr>
           <td>
-            <input type="email" placeholder="example@mail.com" required />
+            <input
+              name="email"
+              type="email"
+              placeholder="example@mail.com"
+              required
+            />
           </td>
         </tr>
         <tr>
           <td>
-            <label for="">Password:</label>
+            <label for="pass">Password:</label>
           </td>
         </tr>
         <tr>
           <td>
-            <input type="password" placeholder="******" required />
+            <input name="pass" type="password" placeholder="******" required />
           </td>
         </tr>
         <tr>
@@ -36,6 +41,8 @@
         </tr>
       </table>
     </form>
-    <center><a href="https//127.0.0.1/ProgramacionAvanzada">Go home</a></center>
+    <center>
+      <a href="http://127.0.0.1/ProgramacionAvanzada/index.html">Go Home</a>
+    </center>
   </body>
 </html>
