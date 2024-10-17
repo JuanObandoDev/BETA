@@ -3,30 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login_style.css" />
     <title>Login</title>
   </head>
   <body>
-    <center><img src="./img/user.png" alt="" width="50" /></center>
+    <center><h1>Login</h1></center>
     <form action="./backend/signin.php" name="Login-form" method="post">
+      <center><img src="./img/user.png" alt="" width="50" /></center>
       <table border="0" align="center">
         <tr>
           <td>
-            <label for="">Email:</label>
+            <label for="email">Email:</label>
           </td>
         </tr>
         <tr>
           <td>
-            <input type="email" placeholder="example@mail.com" required />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="example@mail.com"
+              required
+            />
           </td>
         </tr>
         <tr>
           <td>
-            <label for="">Password:</label>
+            <label for="pass">Password:</label>
           </td>
         </tr>
         <tr>
           <td>
-            <input type="password" placeholder="******" required />
+            <input
+              id="pass"
+              name="pass"
+              type="password"
+              placeholder="******"
+              required
+            />
           </td>
         </tr>
         <tr>
